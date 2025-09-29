@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color:rgb(0, 97, 162);
+    text-align: center;
+    padding:10px;
+    color: white;
+    font-weight: bolder;
+}
+nav{
+    display:flex;
+    background-color: orange
+}
+nav > a{
+    border:4px solid orange;
+    text-decoration: none;
+    padding:5px;
+    font-size:x-large;
+    font-weight: bolder;
+    background-color:burlywood;
+}
+.contenido{
+    background-color: bisque;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
