@@ -17,7 +17,56 @@
         <a href="#"><div>Nivel 3</div></a>
     </nav>
     <div class="contenido">
-        lorem ipsum
+        <h2>Componentes de la PC</h2>
+        <p>La PC contiene multiples componenentes, todos trabajando al unisono para manejar y procesar todos los datos relevantes. Estos componentes puen ser plaquetas impresas o dispositivos mas completos como una impresora, un disco rigido, un teclado etc.</p>
+        <div class="seccion">
+            <h3>Motherboard</h3>
+            <p>El Motherboard, tambien conocido como placa base, placa madre o simplemente mother, es la placa impresa más grande en el chasis de la computadora. Se encarga de distribuir electricidad y facilitar la comunicación entre el CPU, la RAM y cualquier otro componte de Hardware. Hay un rango muy grande de mothers, cada una compatible con un modelo y tamaño especifico. Por ejemplo: Un mother de nuestra pc de escritorio es pequña comparado con mother de un servidor.</p>
+            <p>Ya que los diferentes procesadores y memorias estan destinados a funcionar de maner optima con ciertos tipos de morher, es dificil encontrar un mother que sea compatible con cada tipo de cpu y memoria. Los discos rigidos por otro lado, son generalmente compatibles con una gran variedad de mothers y pueden ser utilizados con la mayoría de las marcas y tipos.</p>
+            <h4>Tipos de mother:</h4>
+            <ol>
+                <li>Advanced Tecnology (AT)<br>Este es el tipo más grande de mother, no suelen ser muy compatibles con gabinetes destinados al uso de escritorio. Al ser fisicamente mas grande, se dificulta la tare de instar nuevos drivers.</li>
+                <li>Standard ATX (Advanced Tecnology Extended)<br>Es una versión mejorada del estandar AT, a diferencia de este, es más compacto y permite a los componentes asociados ser intercambiados.</li>
+                <li>Micro ATX<br>Estos son mother mas pequeños para usarse en gabinetes compactos. Suelen tener menos zolcalos de expanción y las medidas rondan alrdedeor de los 244mm x 244mm</li>
+                <li>Mini ITX<br>Debido a su reducido consumo electrico y rápido enfriamiento, es primariamente utilizado con computadoras de factor pequeños (SFF). Dado su relativamente pequeaño nivel de ruido es recomendable utilizarlos en dispositivos de medios como home theaters, firewalls y NAS</li>
+            </ol>
+            <h4>Zocalos de expanción</h4>
+            <p>Los disitintos componentes se conectan al mother de difertes maneras, puede ser a traveéz de cables o zocalos de expanción.<br>Existen mutlitples tipos para diferentes usos.</p>
+            <ul>
+                <li>
+                    Zocalo del CPU (socket)<br> Dedpendiendo del fabricante podemos encontrancos con diferentes tipos de zocalo. Algunos de estos pueden tener hoyuelos para los pines y otros pueden tener los pines en el zocalo mismo. Algunos de ellos son:
+                    <ul>
+                        <li>LGA (Land Grid Array): Fue introducido por Intel en 2004 y se mantiene desde entonces. Este tiene los pines de conexion integrados al mother. Las ventajas de este diseño es que al estar integrados los pines, permita alturas menores, ofrece mayor resistencia ya que es dificil doblar los pines al no estar en el micro, La instalacion es mas sencilla, ya que se "deja caer" el micro directamente soble el zocalo<br>La desventaja más grande es que si se daña un pin hay que reemplazar el mother completo</li>
+                        <li>PGA (Pin Grid Array): Principalmente utilizado por AMD, a diferencia de LGA, este tiene los pines de conexion en el micro. Su disposición puede cambiar entre generaciones de procesadores. Existen 2 variantes
+                            <ul>
+                                <li>Ceramic Pin Grid Array (CPGA): Se instala sobre un soporte ceramico que conduce el calor. Este no se utiliza actualmente por ser muy fragil, pero fue utilizado en las primeras generaciones de Intel Pentium</li>
+                                <li>Plastic Pin Grid Array (PPGA): Aqui el procesador se deposita sobre un soporte platico, suelen ser economicos y ofrecen un gran rendimiento electrico. La principal ventaja es que es dificil dañar el socket del mother, y ofrece mayor reparabilidad<br>Como desventajas notamos que al estar los pines en el microprocesador, es bastante comun que se doblen, suelen tener una altura mayor, y requieren mas cuidado en la instalacion</li>
+                            </ul>
+                        </li>
+                        <li>BGA (Ball Grid Array): En este diseño el montaje no se realiza sobre un soporte, sino que esta soldado al mother. Aqui, el procesador tiene unas pequeñas bolas de estaño que coinciden con el patron serigrafiado en el mother. Dada esta caracteristica, el socket BGA es el más utilizado en electronica. Permite crear sistemas muy compactos que ahorran espacio y reducen el consumo</li>
+                    </ul> 
+                </li>
+               <li>
+                    Puertos PCIe (Peripherical Component Interconnect): Hoy en día existe el puero PCIexpress, que se suele utilizar para conecatar un GPU, aqunte tamibén soporta otros dispositivos. Aqui se conectan placas de red, placas de video, placas de expansion USB etc. El estandar PCI quedo discontinuado siendo reemplazado por PICe, pero es normal encontrarlos en mothers mas antiguis que siguen en operacion.
+                    Estos puertos se dividen en 2 partes. La primera tiene una longitud y numero de pines fijo y lasegunda puede variar.
+                    <ul>
+                        <li>Primera parte: Sirve para alimentar el GPU, los conectores PICe pueden ofrecer hasta 75 vatios de pontencia.</li>
+                        <li>
+                            Segunda parte: Aqui estan las lineas de conexion que sirven para la transferencia de datos. Estos vienen en 4 formas diferentes
+                            <ul>
+                                <li>1x: Es el ,as pequeño de todos, empleado para ser usado con placas de expansión.</li>
+                                <li>4x: No es muy común en mothers de gama de escritorio, ya que no existen muchas placas de ecpansion para este puerto.</li>
+                                <li>8x: La figurita dificil, sucede lo mismo que en el caso del 4x, hay pocos componentes que lo utilicen. En caso de tener uno de estos componentes, este puedes conectado al puerto de 16x</li>
+                                <li>16x: Es el puerto estandarizado para la conexion de GPUs, de hecho es el único puerto</li>
+                            </ul>
+                        </li>
+                    </ul>
+               </li>
+               <li>
+
+               </li>
+            </ul>
+        </div>
     </div>
     <footer>
         <b>Posadas 601 | La Matanza</b>

@@ -24,6 +24,11 @@ nav > a{
     background-color: bisque;
 }
 
+.seccion{
+    background-color: beige;
+    margin: 0px 10px 0px 10px;
+}
+
 footer{
     background-color: black;
     text-align: center;
