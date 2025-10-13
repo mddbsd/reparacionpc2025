@@ -14,7 +14,7 @@
     <nav>
         <a href="index.html"><div>Nivel 1</div></a>
         <a href="#"><div>Nivel 2</div></a>
-        <a href="#"><div>Nivel 3</div></a>
+        <a href="clasepractica1.html"><div>Practica1</div></a>
     </nav>
     <div class="contenido">
         <h2>Componentes de la PC</h2>
@@ -63,10 +63,133 @@
                     </ul>
                </li>
                <li>
-
+                Puertos de conexión de medios:
+                <ul>
+                    <li>IDE (Integrated Drive Electronics): Este puerto se utiliza para la conexion de dispositivos de almacenamiento como discos duros, unidades de CD, unidades de diskette o unidades de memoria flash. Este quedo discontinuado, por eso no suele verse en la mayoría de las PCs modernas, pero existen empresas que utilizan maquinaria especifica o desactualizada que ocupan estos dispositivos.<br>Este puero utilza el protocolo ATA (Advanced Tecnology Attachment). Fue reemplazado por SATA.<br>La conexion se realiza con cables planos</li>
+                    <li>SATA (Serial Advanced Tecnology Attachment): Cumpli la misma funcion que el puerto IDE, pero este es mucho mas veloz. Ofrece varias mejoraws con respecto al ATA, ofrece mayor velocidad cuando hay varias unidades conectadas, permite cables de transmisión mas largos y la capacidad de conectar y desconectar unidades sin necesidad de apagar la computadora (Hot Swap). Las velocidades varían dependiendo de la generación (SATA I, SATA II, SATA II), y van desde 3Gb/s a 6GB/s</li>
+                    <li>USB (Universal Serial Bus): Dentro del mother encontramos que los puertos usb frontales se conectan con una serie de pines</li>
+                    <li>M.2: Es la nueva tecnología que se utiliza en PCs modernas para la conexion de varios dispositivos, principalmente SSDs (Solid State Disk) y placas de red inalámbrica (WiFi o Bluethoot). Este esta integrado al mother, comparte vias de datos con el PCIe</li>
+                </ul>
+               </li>
+               <li>
+                Conexiones de alimentación: El mother recibe enegría desde fuente atravez de 2 puertos principales.
+                    <ul>
+                        <li>24 pines: Se encarga de suministrar alimentacion a los disitintos componentes y circuitos de la placa base, incluidos el chipset, las ranuras de expansion (PCIe USB SATA).<br>Cada una de los 24 pines transpontra un tipo de energía eléctrica. Incluyen varias lineas de alimentacion, +3.3V +5V y +12V asi como lineas de tierra y una line de señal de encendido</li>
+                        <li>8 pines: Es el conector de alimentación del CPU, tambien llamado EPS12V. Transmite lineas de +12V</li>
+                    </ul>
+               </li>
+               <li>
+                    Zocalos de RAM: Dependiendo de la gama del mother, podemos encontrarnos con 2 o mas zocalos de RAM. Aqui se conecta la memoria RAM de la pc. Hoy en día se utilizan los modelos DDR4 y DDR5, las diferentes tecnologías varian su velocidad y capacidad.
                </li>
             </ul>
         </div>
+        <div class="seccion">
+            <h2>Dispositivos de almacenamiento</h2>
+            <p>Estos son normalmente llamados discos rigidos por costumbre. Pero ya no son mas discos, los estandares de hoy en dia promueven la utilizacion de discos de estado solido.</p>
+            <p>Si bien los llamamos discos, los dispositivos modernos no contienen ningun componente circular. Solo son discos los HDD (Hard Disk Drive)</p>
+            <ul>
+                <li>HDD: Estos son discos mecanicos, funcionan con una serie de platos que almacenan la información de manera magnetica. Este cuenta con un brazo que se mueve para leer la información. Los platos giran a alrededor de 3600Rpm, si bien parecen rapidos, esta velocidad combinada al movimiento del brazo limita la velocidad máxima.</li>
+                <li>SSD</li>
+            </ul>
+            <h2>Medidas de almacenamiento</h2>
+            <p>Cada archivo, programa, directorio, etc... ocupa un lugar en el dispositivo de almacenamiento, ese estpacio es un conjunto de <b>Bits</b>. Los Bits son la unidad mas pequeña de almacenamiento, es representada por un 1 o un 0 y los archivos estan compuestos por cadaneas extenas de bits.<br>Ya que estas cadenas son tan extensas como para ser expresadas me manera sencilla, se agrupan los bits en diferetes medidas.</p>
+            <h3>Byte</h3>
+            <p>Si bien el bit es la unidad minima de almacenamiento electronico, el byte es la unidiad minima de almanacenamiento en los dispositivos. Estos bytes son conjuntos de 8 bits.</p>
+            <p>Por ejemplo: la letra A, esta compuesta por los siguientes bits 01000001</p>
+            <p>Mientras mas grande sea nuestro archivo, mas bits ocupara en el almacenamiento, y para expresarlo de manera mas sencilla, utilizaremos diferntes medidas.</p>
+
+            <h4>Unidades de bytes</h4>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Simbolo</th>
+                    <th>binario</th>
+                    <th>Cantidad de Bytes</th>
+                    <th>Equivalencia</th>
+                </tr>
+                <tr>
+                    <td>Kilobyte</td>
+                    <td>KB</td>
+                    <td>2 elevado 10</td>
+                    <td>1024</td>
+                    <td>=</td> 
+                </tr>  
+                <tr>
+                    <td>megabyte</td>
+                    <td>MB</td>
+                    <td>2 elevado 20</td>
+                    <td>1048576</td>
+                    <td>1024KB</td>
+                </tr>
+                <tr>
+                    <td>gigabyte</td>
+                    <td>GB</td>
+                    <td>2 elevado 30</td>
+                    <td>1073741824</td>
+                    <td>1024MB</td> 
+                </tr>
+                <tr>
+                    <td>terabyte</td>
+                    <td>TB</td>
+                    <td>2 elevado 40</td>
+                    <td>1099511627776</td>
+                    <td>1024GB</td>
+                </tr>
+                <tr>
+                    <td>petabyte</td>
+                    <td>PB</td>
+                    <td>2 elevado 50</td>
+                    <td>1125899906842624</td>
+                    <td>1024TB</td>
+                </tr>
+            </table>
+
+            <h4>Unidades de bits</h4>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Simbolo</th>
+                    <th>Cantidad de bits</th>
+                    <th>Equivalencia</th>
+                </tr>
+                <tr>
+                    <td>Kilobit</td>
+                    <td>Kb</td>
+                    <td>1000</td>
+                    <td>=</td> 
+                </tr>  
+                <tr>
+                    <td>megabit</td>
+                    <td>Mb</td>
+                    <td>1048576</td>
+                    <td>1000Kb</td>
+                </tr>
+                <tr>
+                    <td>gigabit</td>
+                    <td>Gb</td>
+                    <td>1073741824</td>
+                    <td>1000Mb</td> 
+                </tr>
+                <tr>
+                    <td>terabit</td>
+                    <td>Tb</td>
+                    <td>1099511627776</td>
+                    <td>10Gb</td>
+                </tr>
+                <tr>
+                    <td>petabyte</td>
+                    <td>Pb</td>
+                    <td>1125899906842624</td>
+                    <td>1000Tb</td>
+                </tr>
+            </table>
+            <p>Los HDD, SSD, Pendrives, Memorias flash, suelen mostrar su capacidad en bytes, conociendo estas medidas, facilitamos el proceso de crear particiones.</p>
+            <h3>Particiones</h3>
+            <p>La manera de gestionar el almancenamiento, es atravéz de las particiones. Su uso mejora el mantenimiento de las unidades, su organizacion, la integridad de los datos e incluso el rendimiento.<br>Estas particiones son diviciones en varias partes de nuestras unidades de almacenamiento. Una vez creadas y preparadas, con un proceso llamado "formateo", las particiones son reconocidas y manejadas por el sistema operativo de manera independienta, cada una con su propio sistema de archivos</p>
+            <p>En windows, las particiones estan identificadas con una letra seguida por dos puntos. En otros sistemas operativos como Linux y derivados de UNIX com MacOS, es común emplear directamente varias particiones para archivos, datos de usuario y memoria virtual</p>
+            <p>Cuando compramos una PC nueva con windows, esta suele venir con una sola particion C: que ocupa la totalidad del alamacenamieno. Algunos fabricantes añanden pequeñas particiones para recuperacion del sitema, y el miso Windows crea las suyas propias adicionales, pero no estan destinadas al manejo del usuario</p>
+        </div>
+
     </div>
     <footer>
         <b>Posadas 601 | La Matanza</b>
