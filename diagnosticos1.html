@@ -188,6 +188,32 @@
             <p>La manera de gestionar el almancenamiento, es atravéz de las particiones. Su uso mejora el mantenimiento de las unidades, su organizacion, la integridad de los datos e incluso el rendimiento.<br>Estas particiones son diviciones en varias partes de nuestras unidades de almacenamiento. Una vez creadas y preparadas, con un proceso llamado "formateo", las particiones son reconocidas y manejadas por el sistema operativo de manera independienta, cada una con su propio sistema de archivos</p>
             <p>En windows, las particiones estan identificadas con una letra seguida por dos puntos. En otros sistemas operativos como Linux y derivados de UNIX com MacOS, es común emplear directamente varias particiones para archivos, datos de usuario y memoria virtual</p>
             <p>Cuando compramos una PC nueva con windows, esta suele venir con una sola particion C: que ocupa la totalidad del alamacenamieno. Algunos fabricantes añanden pequeñas particiones para recuperacion del sitema, y el miso Windows crea las suyas propias adicionales, pero no estan destinadas al manejo del usuario</p>
+            <h3>Tipos de particiones</h3>
+            <p>Existen 3 tipos de particiones que se diferencias según el uso al que estén destinados</p>
+            <h4>Partición primaria</h4>
+            <p>La partición primaria, es el tipo principal de partición. Un disco físico tiene una de esstas particiones activas como mínimo. esta será la que el sistema reconoce y permitirá el arranque. Solo se permiten 4 particiones de este tipo por disco, esto es porque no se recomienda añadir mas de un sitema en cada particion primaria. Asi que al tener varios sistemas, se deberá asignar una partición primaria para cada uno.</p>
+            <h4>Particion secundaria o extendida</h4>
+            <p>Estas particiones actúan como las primarias pero se pueden dividir de manera lógica en multiples particiones. Esta partición secundaria se creó para eliminar la limitacíon de 4 particiones primarias, y asi extender un núero mayor de divisiones en el diso. En caso de utilizar una partición para almacenar datos, se recomienda utiliza este tipo.</p>
+            <h4>Partición lógica</h4>
+            <p>Son particiones que dividen las particiones secundarias, permitiendo multiples divisiones de la partición secundaria. Cada partición lógica ha de tener un formato para que los sistemas puedan reconocer. No pueden contener sistes operativos, y se usan generalmente para almacenar o mantener ordeados nuestros archivos.</p>
+            <h3>Sistema de archivos</h3>
+            <p>Como vimos, no todas las particiones tienen por qué tener el mismo formato, ya que si vamos a dedicar una particion a windows, deberá estar en formato NTFS, si en otra vamos a instalar Linuxs, deberá estar en Ext4 (la mas común), incluso podemos tener una particion con cifrado o seguridad extra para las copias de seguridad o datos sensibles. Tenemos que configurar cada particion para su uso correcto</p>
+            <p>Cada sistema reconoce un formato de particion, no solo para la instalación, sino también para gestionar los archivos y poder almacenar datos.</p>
+            <ul>Windows
+                <li>
+                    ExFAT (Extended File Allocation Table): Ess un formato propiedad de Microsoft que se diseño especialmente para unidadeds Flash. Este formato elimina el limite de 4gb de FAT32, ademas es compatible con las ultimas versiones de Windows, Linux, MaxOs, ChromeOs, e incluso Android.
+                </li>
+                <li>
+                    FAT (File Allocation Table): Es un sistema de archivos muy sencillo, desarrollado para MS-DOS, está presente en la informatica desde los disquetes que tenian pocos megas de capacidad. Este cuenta con 2 versiones.
+                    <ul>
+                        <li>FAT16: Permite particiones de hasta 4GB, aunque inicialmente tenía más limitaciones permitiendo solo 2GB</li>
+                        <li>FAT32: Conserva la compatibilidad con MS-DOS y amplia la capacidad. Se limitó su tamaño a 64GB pero admite archivos de hasta 4GB</li>
+                    </ul>
+                </li>
+                <li>
+                    NTFS: (New Techno File System): Surgió con Windows NT y esta basado en HPFS de IBM/Microsofy y HFS de Apple, Cuenta con mejoras como compatibilidad con enlaces duros y un mayor tamaño de particion de hasta 16 TIB. MacOS es capaz de leer archivos en un particion NTFS pero no puede escribir de forma nativa, requiere programas externos.
+                </li>
+            </ul>
         </div>
 
     </div>
