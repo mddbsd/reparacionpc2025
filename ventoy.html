@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/general.css">  
+    <title>Ventoy</title>
+</head>
+<body>
+    <header>
+        <h1>Curso de Reparación de PC</h1>
+        <p>Lunes Miercoles Viernes de 13:00 a 15:30</p>
+    </header>
+    <nav>
+        <a href="index.html"><div>Nivel 1</div></a>
+        <a href="diagnosticos1.html"><div>Nivel 2</div></a>
+        <a href="clasepractica1.html"><div>Practica1</div></a>
+        <a href="ventoy.html"><div>SO</div></a>
+        <a href="windows.html"><div>Instalacion Win</div></a>
+    </nav>
+    <div class="contenido">
+        <div class="seccion">
+            <h2>Instalación de Sistemas Operativos</h2>
+            <p>Todas las computadoras personales necesitan un Sistema Operativo. Este es el encargado, entre otras cosas, de gestrionar la comunicación entre el usuario y el hardware.<br>Otra de las funcionades que nos ofreces los SO, es una intefaz gráfica (aunque no siempre sea el caso) para facilitar el mamejo de la PC.</p>
+            <h3>Medios de instalación</h3>
+            <p>Para instalar un SO, se requieren 3 elementos basicos: Un medio de instalación, una "imagen" y un dispositivo objetivo (donde se instalará el so).<br>El medio puede ser cualquier dispositvo de almacenamiento externo, desde un CD hasta un Disco Externo, lo mas normal es utilizar un "pendrive".<br>Dicho medio tiene que ser preparado de alguna manera, en este caso utilizaremos la herramienta ventoy.</p>
+        </div>
+        <div class="seccion">
+            <h2>Ventoy</h2>
+            <p>Ventoy es una utilidad que nos permite cargar mutiples imagenes para ser booteadas por la PC, a travéz de un menú podemos elegir una de las imagenes que caragamos.<br>Estas imagenes suelen tener una extension .iso, donde se compactan todos los archivos necesarios para la instalacion del SO</p>
+            <p>El primer paso es descargar la herramienta desd <a href="https://www.ventoy.net/en/download.html">aqui</a> el archivo con extension .zip</p>
+            <p>Una vez descargado, lo descomprimimos (en cualquier lugar de la pc) y buscamos dentro de la carpeta el progra <b>ventyo2disk</b><br>La herramienta se encaragra de crear 2 particiones en el pendrive, una booteable (arrancable) que contiene el sitema ventoy y otra donde cargaremos las imagenes.</p>
+            <p>El proceso de carga es extremadamente sencillo, simplemente bajamos la imagen del SO y la copiamos dentro de la particion de almacenamiento.</p>
+            <h3>Booteo</h3>
+            <p>Este es proceso de arranque de las PCs, se le indica al a bios/uefi cual es el dispositivo que contiene el sistema operativo</p>
+            <p>Cada fabricante de BIOS/UEFI es diferente, pero las herramientas suelen estar identificadas de manera similar, tambien hay que tener en cuenta que la manera de acceder a este menu puede variar segun el fabricante. En la mayoria de los casos accedemos a este menu con la tecle supr o f2 en el momento del POST</p>
+        </div>
+    </div>
+    <footer>
+        <b>Posadas 601 | La Matanza</b>
+    </footer>
+</body>
+</html>
