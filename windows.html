@@ -16,11 +16,18 @@
         <a href="diagnosticos1.html"><div>Nivel 2</div></a>
         <a href="clasepractica1.html"><div>Practica1</div></a>
         <a href="ventoy.html"><div>SO</div></a>
+        <a href="vms.html"><div>VMs</div></a>
     </nav>
     <div class="contenido">
         <div class="seccion">
             <h2>Instalacion de windos</h2>
             <p>El primer paso para instalar windows es crear el medio de instalación, podemos utilizar el ventoy o la herramienta de creación de medios de Microsoft.<br>Una vez obtenido el medio, debemos bootear nuestra pc con dicho medio, esto inciara el proceso de instalación de windows.</p>
+            <h3>Secuencia de booteo</h3>
+            <p>Cuando inicia la PC, luego del POST, se ejecuta la secuencia de arranque de discos. Esta secuencia es una lista con todos los dispositivos encontrados en la PC, podemos cambiar la secuencia seleccionando como primer disco nuestro medio de instalacion (USB).<br>Cada fabricante tiene una BIOS/UEFI diferente, aunque las opciones de booteo suele ser las mismas.<br>La configuracicon puede llamarse "secuena de arranque", "boot priority", "boot secuence" o algo similar. Con esto cambiamos el orden de booteo de los discos.<br>La otra opcion es acceder al menu de booteo, al igual que con la bios, la manera de accer a este menu varia segun el fabricante, normalmente accedemos con la tecla F8, F11, F12. Ante cualquier duda, podemos ver en la pantalla del POST cual es la tecla o sino podemos consultar el manual del</p>
+            <h4>Modo de booteo</h4>
+            <p>Suele suceder que la bios nos muestra 2 modos de bootear el dispositivo extraible, el modo UEFI o el modo Legacy. Los identificamos con el nombre que figura en la bios.<br>En dispositivos modernos siempre tratamos de bootear la particion UEFI, pero en algun hardware mas antiguo, hay que bootear el modo legacy</p>
+            <h3>Menu de arranque</h3>
+            <p>Siempre es recomendable mantener el disco que contiene el sistema operativo como primer dispositivo booteable. En vez cambiarlo podemos acceder al menu de booteo con una tecla.</p>
             <p>El proceso es guiado con un asistente, el cual nos indicara que version queremos instalar, nos soliicitara la clave del producto (aunque se puede omitir) y luego comenzara el asistente de particionado y formateado.</p>
             <p>Aunque el proceso particionado y formateado es automatico, tenemos la opcion de crear particiones segun los requerimientos del cliente.</p>
             <p>El ultimo paso en esta etapa es el copiado de archivos, que puede tardar desde unos miutos a algunas horas dependiendo de los recursos del sistema.</p>
@@ -31,7 +38,6 @@
             <p>Windows esta empaquetado junto algunos drivers mas conocidos, en caso de que no se encuentre el driver de nuestro hardware, este instalará una version generica para poder utilizarse, estos suelen ser drivers de audio o video.<br>Tener drivers genericos no es conveniente, ya que quitan funcionalidades esenciales del hardware, por lo tanto, hay que buscar en el sitio del fabricante los drivers o dejar que trabaje Windows Update (Esto suele instalar la mayoría de los drivers pero no todos)</p>
             <h3>Programas</h3>
             <p>Como base tenemos que dejar instalado un navegador de internet y herramientas de ofimatica, opcionalmente podemos dejar instaladas herramientas de mantenimiento para eventuales servicios.<br>Adicionalmente, si el cliente lo requiere, tenemos que instalar el software que nos solicita. Hay que informarnos bien con el cliente el tipo de software que quiere instalar, si requiere alguna version en especifico, solicitaremos las lisencias si es necesario. NUNCA instalar software proveniente de sitios inseguros</p>
-            
         </div>
 
     </div>

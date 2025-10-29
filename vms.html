@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/general.css">  
+    <title>Maquinas Virtuales</title>
+</head>
+<body>
+    <header>
+        <h1>Curso de Reparación de PC</h1>
+        <p>Lunes Miercoles Viernes de 13:00 a 15:30</p>
+    </header>
+    <nav>
+        <a href="index.html"><div>Nivel 1</div></a>
+        <a href="diagnosticos1.html"><div>Nivel 2</div></a>
+        <a href="clasepractica1.html"><div>Practica1</div></a>
+        <a href="ventoy.html"><div>SO</div></a>
+        <a href="windows.html"><div>Instalacion Win</div></a>
+        <a href="vms.html"><div>VMs</div></a>
+    </nav>
+    <div class="contenido">
+        <div class="seccion">
+            <h2>Maquinas Virtuales</h2>
+            <p>Ya conocemos el hardware de nuestra PC, principalmente la memoria RAM, el microprocesador, y el almacenamiento. Trabajando como técnicos vamos a estar modificando y probando diversos elementos del sistema operativo, lo que lleva a posibles errores, algunas veces irrecuperables.<br>Para evitar muchos de los inconvenientes que implica trabajar directamente sobre nuestro hardware, podemos utilizar Maquias Virtuals (VMs).</p>
+            <p>Las maquinas virtuales, dividen el hardware a travéz del software, crean un dispositivo virtual el cual podemos tratar como una PC física. Para logralo, necestiamos de un <b>Hipervisor</b></p>
+            <h3>Hipervisores</h3>
+            <p>Es una capa de software para realizar la virtualización del hardware y permitirnos utilizar al mismo tiempo diferes sitemas operativos en una sola PC.</p>
+            <p>Existen 3 tipos de hipervisores</p>
+            <h4>Hipervisor tipo 1</h4>
+            <p>También llamdo nativo, o bare metal, es un software que se ejecuta directamente sobre el hardware fisico. Las maquinas virtuales se ejecutan sobre el y todos los accesos directos a hardware son controlados por el hipervisor. Ej: Proxmox VE, Xen, KVM, Microsoft Hyper-V</p>
+            <h4>Hipoervisor tipo 2</h4>
+            <p>También llamado hosted, se ejecuta sobre un sistema operativo ya instalado en la PC. Ejemplos: VMWare, VirtualBox, QEMU</p>
+            <h4>Hipervisor hibrido</h4>
+            <p>Sobre el hardware se ejecuta un sistema operativo anfitrion y el hipervisor. El hipervisor a veces interacciona directamente sobre el hardware pero otras veces utiliza servicios que le proporciona el sitema operativo anfitrion. Ejemplo: Microsoft Virtual PC y Microsoft Virtual Server 2005 R2</p>
+            <h3>Virtual Box</h3>
+            <p>Para este curso vamos a utilizar un hipervisor de tipo 2 llamado <a href="https://www.virtualbox.org/">VirtualBox</a>. Antes de instalarlo, hay que asegurarse de tener el visual c++ redistributable y habilitada la virtualización en la BIOS. Esta confugracion de la bios es diferente dependiendo el fabricante, hay que referirnos al manual para ubicarla</p>
+        </div>
+    </div>
+    <footer>
+        <b>Posadas 601 | La Matanza</b>
+    </footer>
+</body>
+</html>
